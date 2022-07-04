@@ -15,8 +15,8 @@ img {
 }
 
 .header {
-	padding-top: 50px;
-	padding-bottom: 50px;
+	/* padding-top: 50px; */
+	/* padding-bottom: 50px; */
 }
 
 .logo {
@@ -215,4 +215,28 @@ img {
 
 .none {
 	display: none;
+}
+
+/*  */
+
+.footer {
+	background-color: black;
+	color: white;
+	padding: 20px;
+}
+
+
+.header-logo {
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin-bottom: 20px;
+	
+}
+
+.header-title {
+	font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
 }
