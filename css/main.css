@@ -246,3 +246,19 @@ img {
 	flex-direction: row;
 	justify-content: space-between;
 }
+
+.languages {
+	display: flex;
+	font-size: 20px;
+}
+
+.languages-link {
+	color: white;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+.languages-link:hover {
+	color: white;
+	text-decoration: none;
+}
