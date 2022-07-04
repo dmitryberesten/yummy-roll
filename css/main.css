@@ -222,7 +222,7 @@ img {
 .footer {
 	background-color: black;
 	color: white;
-	padding: 20px;
+	padding: 10px;
 }
 
 
@@ -230,7 +230,7 @@ img {
 	background-color: black;
 	color: white;
 	text-align: center;
-	padding: 20px;
+	padding: 5px;
 	margin-bottom: 20px;
 	
 }
@@ -239,4 +239,10 @@ img {
 	font-size: 3.5rem;
     font-weight: 300;
     line-height: 1.2;
+}
+
+.rolls {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
