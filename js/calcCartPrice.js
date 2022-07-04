@@ -29,7 +29,7 @@ function calcCartPriceAndDelivery() {
 	// Указываем стоимость доставки
 	if (priceTotal >= 600) {
 		deliveryCost.classList.add('free');
-		deliveryCost.innerText = 'бесплатно';
+		deliveryCost.innerText = 'free';
 	} else {
 		deliveryCost.classList.remove('free');
 		deliveryCost.innerText = '250 грн';
