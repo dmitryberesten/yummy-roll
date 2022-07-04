@@ -1,0 +1,15 @@
+function calcCartPrice() {
+    const cartItems = document.querySelectorAll('.cart-item');
+
+    let totalPrice = 0;
+
+    cartItems.forEach(function (item) {
+
+        const amountEl = item.querySelector('[data-counter]'); // Количество
+        const priceEl = item.querySelector('.price__currency'); // Стоимость
+        const currentPrice = parseInt(amountEl.innerText) * parseInt(priceEl.innerText);
+        totalPrice += currentPrice;
+    })
+    
+    console.log(totalPrice);
+}
