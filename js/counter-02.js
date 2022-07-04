@@ -19,12 +19,17 @@ window.addEventListener('click', function (event) {
     }
 
     // Проверяем является ли элемент по которому был совершен клик кнопкой Минус
-    if (event.target.dataset.action === 'minus') {
-
+    if (event.target.dataset.action === 'minus') {  
+        
          // Проверяем чтобы счетчик был больше 1
        if (parseInt(counter.innerText) > 1) {
         // Изменяем тект в счетчике уменьшая его на 1
         counter.innerText = --counter.innerText;
+       } else if (event.target.closest('.cart-wrapper') && parseInt(counter.innerText) === 1) {
+        console.log('in cart!');
+        // Удаляем товар из корзины
+        event.target.closest('.cart-item').remove();
        }
+
     }
 });
