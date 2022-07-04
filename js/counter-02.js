@@ -29,6 +29,8 @@ window.addEventListener('click', function (event) {
         console.log('in cart!');
         // Удаляем товар из корзины
         event.target.closest('.cart-item').remove();
+
+        toggleCartStatus();
        }
 
     }
